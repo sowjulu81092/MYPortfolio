@@ -1,0 +1,144 @@
+* {
+   margin: 0px;
+   padding: 0px; 
+   box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to right,rgba(26, 25, 25,0.7),rgba(140, 128, 128,0.4));
+}
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 10vh;
+}
+.logo-container,.nav-links {
+    display: flex;
+}
+.logo-container {
+    flex: 1;
+    align-items: center;
+}
+.logo-text {
+     font-weight: 600;
+     padding-left: 10px;
+     color: rgba(184, 154, 154, 0.4);
+     text-shadow: 1px 0.8px 1px black;
+}
+.small-underline {
+    position: relative;
+    display: inline-block;
+}
+.small-underline::after {
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 23%;
+    height: 4px;
+    width: 55%;
+    background-color: rgb(18, 4, 59);
+    margin: -5px;
+}
+nav {
+    flex: 2;
+
+}
+.nav-links {
+    justify-content: space-around;
+
+}
+.nav-links li {
+    list-style-type: none;
+}
+.nav-link {
+    display: flex;
+    margin: 20px;
+    padding: 5px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.active {
+    background-color: rgb(76, 115, 86);
+    color: black;
+}
+.active:hover {
+    margin: 25px;
+    padding:20px;
+    height: 50%;
+}
+.nav-links a:hover:not(.active) {
+    background-color: rgba(97, 117, 103,0.5); 
+    color: black;
+    height: 50%;
+    margin: 25px;
+    padding: 10px; 
+}
+main {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 100vh;
+}
+.right-box {
+     display: flex;
+     margin-right: 10px;
+     width: 650px;
+     height: auto;
+}
+.left-box {
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+.left-box h1 {
+    position: absolute;
+    top: 25%;
+    transform:translate(20%,-10%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 60px;
+    margin: 40px;
+    padding: 15px;
+    color: rgb(242, 228, 228) ;
+    text-shadow: 1px 0.8px 7px black;
+    font-style: italic;
+}
+.left-box h3{
+    position: absolute;
+    top: 50%;
+    transform: translate(0%,-30%);
+     font-size: 40px;
+     font-weight: 200;
+     color: rgba(201, 181, 181,0.9);
+    padding: 10px;
+     text-indent: 30px;
+     margin: 30px;
+    
+}
+button {
+    position: absolute;
+    bottom: 50px;
+    left: 80%;
+    transform: translate(50%,-100%); 
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px;
+    background-color: rgba(187, 212, 194, 0.8);
+    color: black;
+    box-shadow: 1px 1px 2px black;
+
+}
+.My-projects {
+    text-decoration: none;
+    color: rgb(16, 17, 16);
+    text-shadow: 0.5px 0.5px 1px grey;
+    font-size: 16px;
+}
+.right-box {
+    flex: 3;
+    justify-content: center;
+    align-items: center; 
+    filter:drop-shadow(1px 1px 4px black);
+}
